@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Script Tutorials" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>HTML5 Audio player with playlist | Script Tutorials</title>
+
+    <!-- add styles and scripts -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/musicplayer.js"></script>
+    <!-- Add the slick-theme.css if you want default styling -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+     <style>
+	.float-img{
+		vertical-align:middle;
+		 float:right;
+		 margin-right:10px;
+		 margin-bottom:5px;
+		 border:solid black 2px;
+		 padding:2px;
+		 }
+	 
+	 </style>
+
+</head>
+
+</html> 
+<h1>Using Custom Selector For Matching Playlist Items</h1>
+<html lang="en">
+
+
+
+
+<body>
+<footer>Content for New footer Tag Goes Here</footer>
+  
+ 
+
+    
+
+<img src="Hydrangeas.jpg" width="400" height="200" alt=""/> 
+	
+	
+<iframe width="400" height="200" src="https://www.youtube.com/embed/puIvyXOdG24" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<img src="Hydrangeas.jpg" width="400" height="200" alt=""/> 
+    
+	
+<h1>Using Custom Selector For Matching Playlist Items</h1>
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+   <div class="example">
+      
+      
+
+        <ul class="playlist">
+            <li data-cover="http://digital.akauk.com/utils/musicPlayer/data/John-Wesley.jpg" data-artist="DILIP RAY"><a
+                    href="data/Titli%20Rani%20New%20Chhattisgarhi%20Geet%20HD%20Video%202019%20AVM%20STUDIO%20RAIPUR.mp3"><p1>01.</p1>
+              Titli Rani New Chhattisgarhi Geet AVM STUDIO RAIPUR
+                     </a></li>
+                    <hr>
+               
+            <li data-cover="http://digital.akauk.com/utils/musicPlayer/data/John-Wesley.jpg" data-artist="DILIP RAY"><a
+                    href="data/Karma%20Nacha%20de%20Mola%20New%20Chhattisgarhi%20Geet%20HD%20Video%20AVM%20STUDIO%20RAIPUR.mp3"><p1>02.</p1>
+              Karma Nacha de Mola New Chhattisgarhi Geet AVM STUDIO RAIPUR
+                     </a></li>
+                     <hr>
+             
+            
+            <li data-cover="http://digital.akauk.com/utils/musicPlayer/data/John-Wesley.jpg" data-artist="DILIP RAY"><a
+                    href="data/Jas%20Geet%20Maiya%20Maiya%20Bole%20Chiraiya%20Chhattisgarhi%20Navratri%20Bhakti%20Son%20AVM%20STUDIO%20RAIPUR.mp3"><p1>03.</p1>
+            Maiya Maiya Bole ChiraiyaNavratri Bhakti AVM STUDIO RAIPUR
+                     </a></li>
+                    
+             <hr>
+            
+            
+            <li data-cover="http://digital.akauk.com/utils/musicPlayer/data/John-Wesley.jpg" data-artist="DILIP RAY"><a
+                    href="data/Karma%20Geet%20Aana%20Godana%20Godale%20Mor%20Nav%20Ke%20Chhattisgarhi%20Song%20AVM%20STUDIO%20RAIPUR.mp3"><p1>04.</p1>
+              Aana Godana Godale Mor Nav Ke AVM STUDIO RAIPUR
+                     </a></li>
+                    
+             <hr>
+                       <li data-cover="http://digital.akauk.com/utils/musicPlayer/data/John-Wesley.jpg" data-artist="DILIP RAY"><a
+                    href="data/Karma%20Song%20Sun%20To%20Re%20Mor%20Jawara%20New%20Chhattisgarhi%20Geet%20%20AVM%20STUDIO%20RAIPUR.mp3"><p1>05.</p1>
+               Sun To Re Mor Jawara AVM STUDIO RAIPUR
+                     </a></li>
+                <hr>        
+                 
+             <li data-cover="http://digital.akauk.com/utils/musicPlayer/data/John-Wesley.jpg" data-artist="DILIP RAY"><a
+                    href="data/Karma%20Geet%20Jhunga%20Ke%20Nar%20Ma%20Chhattisgarhi%20AVM%20STUDIO%20RAIPUR.mp3"><p1>06.</p1>
+              Jhunga Ke Nar Ma Chhattisgarhi AVM STUDIO RAIPUR
+                     </a></li>
+                       
+         <hr>
+            
+            
+            
+            
+                 
+                    
+        </ul>
+       
+   
+    
+    </div>
+
+ 
+
+    <header> </header>
+   
+
+
+    <script>
+
+        $(".example").musicPlayer({
+            elements: ['artwork', 'information', 'controls', 'progress', 'time', 'volume'], // ==> This will display in  the order it is inserted
+            //elements: [ 'controls' , 'information', 'artwork', 'progress', 'time', 'volume' ],
+            //controlElements: ['backward', 'play', 'forward', 'stop'],
+            //timeElements: ['current', 'duration'],
+            //timeSeparator: " : ", // ==> Only used if two elements in timeElements option
+            //infoElements: [  'title', 'artist' ],
+
+            //volume: 10,
+            //autoPlay: true,
+            //loop: true,
+
+            onPlay: function () {
+                $('body').css('background', 'black');
+            },
+            onPause: function () {
+                $('body').css('background', 'green');
+            },
+            onStop: function () {
+                $('body').css('background', '#141942');
+            },
+            onFwd: function () {
+                $('body').css('background', 'red');
+            },
+            onRew: function () {
+                $('body').css('background', 'blue');
+            },
+            volumeChanged: function () {
+                $('body').css('background', 'red');
+            },
+            progressChanged: function () {
+                $('body').css('background', 'orange');
+            },
+            trackClicked: function () {
+                $('body').css('background', 'brown');
+            },
+            onMute: function () {
+                $('body').css('background', 'grey');
+            },
+        });
+
+        $('.example3 .playlist').on('init', function (event, slick) {
+
+            $(".example3").musicPlayer({
+                playlistItemSelector: '.slick-slide:not(.slick-cloned) .song-item',
+                elements: ['artwork', 'information', 'controls', 'progress', 'time', 'volume'], // ==> This will display in  the order it is inserted
+                //elements: [ 'controls' , 'information', 'artwork', 'progress', 'time', 'volume' ],
+                //controlElements: ['backward', 'play', 'forward', 'stop'],
+                //timeElements: ['current', 'duration'],
+                //timeSeparator: " : ", // ==> Only used if two elements in timeElements option
+                //infoElements: [  'title', 'artist' ],
+
+                //volume: 10,
+                autoPlay: true,
+                loop: true,
+
+                onPlay: function () {
+                    $('body').css('background', 'black');
+                },
+                onPause: function () {
+                    $('body').css('background', 'green');
+                },
+                onStop: function () {
+                    $('body').css('background', '#141942');
+                },
+                onFwd: function () {
+                    $('body').css('background', 'white');
+                    slideToActive();
+                },
+                onRew: function () {
+                    $('body').css('background', 'blue');
+                    slideToActive();
+                },
+                volumeChanged: function () {
+                    $('body').css('background', 'red');
+                },
+                seeked: function () {
+                    $('body').css('background', 'orange');
+                },
+                trackClicked: function () {
+                    $('body').css('background', 'brown');
+                },
+                onMute: function () {
+                    $('body').css('background', 'grey');
+                },
+
+            });
+
+        });
+        //slick slider initialisation
+        $(".example3 .playlist").slick({
+            arrows: false,
+            dots: true
+        });
+
+        slideToActive = function () {
+            var slideIndex = $('.slick-slide:not(.slick-cloned) .song-item.active').closest('.slick-slide').attr('data-slick-index');
+            $('.example .playlist').slick('slickGoTo', slideIndex);
+        }
+
+        $('.slick-dots button').click(function () {
+            var index = $(this).text() - 1;
+            index = '[data-slick-index="' + index + '"]';
+            $('.slick-slide:not(.slick-cloned)' + index + ' .song-item a').click();
+        });
+
+        $(".example2").musicPlayer({
+            //volume: 10,
+            //elements: ['artwork', 'controls', 'progress', 'time', 'volume'],
+            //playerAbovePlaylist: false,
+            // autoPlay: true,
+            // loop: true,
+            onLoad: function () {
+                //Add Audio player
+                plElem = "<div class='pl'></div>";
+                $('.example2').find('.player').append(plElem);
+                // show playlist
+                $('.pl').click(function (e) {
+                    e.preventDefault();
+                    $('.example2').find('.playlist').toggleClass("hidden");
+                });
+            },
+
+        });
+
+
+
+
+
+    </script>
+
+<footer>Content for New footer Tag Goes Here</footer>
+</body>
+
+</html>

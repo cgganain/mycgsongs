@@ -1,0 +1,18 @@
+Connection-specific DNS Suffix: 
+Description: D-Link DWA-525 Wireless N 150 Desktop Adapter
+Physical Address: ?FC-75-16-8E-FB-8C
+DHCP Enabled: Yes
+IPv4 Address: 192.168.43.123
+IPv4 Subnet Mask: 255.255.255.0
+Lease Obtained: Tuesday, May 05, 2020 6:51:20 PM
+Lease Expires: Tuesday, May 05, 2020 7:51:20 PM
+IPv4 Default Gateway: 192.168.43.28
+IPv4 DHCP Server: 192.168.43.28
+IPv4 DNS Server: 192.168.43.28
+IPv4 WINS Server: 
+NetBIOS over Tcpip Enabled: Yes
+IPv6 Address: 2409:4043:102:3d3b:2462:8b6f:86fb:3f33
+Temporary IPv6 Address: 2409:4043:102:3d3b:3d6a:2481:aa91:1667
+Link-local IPv6 Address: fe80::2462:8b6f:86fb:3f33%12
+IPv6 Default Gateway: fe80::1802:aeff:fe6c:d5f9%12
+IPv6 DNS Server: 
